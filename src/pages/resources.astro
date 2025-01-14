@@ -1,0 +1,17 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+// TODO: Use collections instead of just globbing
+// import { getCollection } from 'astro:content';
+const allResources = Object.values(import.meta.glob('../content/docs/resources/*.md', { eager: true }));
+
+const pageTitle = "Catalog";
+---
+<StarlightPage frontmatter={{ title: pageTitle }}>
+  <p>A collection of books, videos, and more to help you grow, both in people and technical skills.</p>
+  <ul>
+    {allResources.map((resource: any) =>
+    <li><a href={resource.url}>{resource.frontmatter.title}</a> by {resource.frontmatter.author}</li>)
+    }
+  </ul>
+</StarlightPage>

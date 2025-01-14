@@ -1,0 +1,37 @@
+---
+title: Technical Overview
+---
+
+- Key Principles (Explanations):
+    - Optimize for iteration speed
+    - Target architecture for at most 10x scale
+    - Use boring technology
+- Architecture: People should create diagrams of known systems and then their own systems.
+    - Modularity.
+    - Layering
+    - Physical vs Logical views
+- Technology basics and tools to inspect.
+    - OS: Isolation, Containers/VMs
+    - Networking: TCP/IP, DNS
+    - Security: symmetric, asymmetric. confidentiality, integrity.
+    - The web: HTTP, HTML, CSS. DOM.
+    - ML: neural nets, backprop
+    - Persistence: memory hierarchy. SQL (ACID) vs NoSQL.
+    - Concurrency. Locks, races, etc.
+
+- Performance
+    - Amdahl's Law
+    - throughput vs latency
+    - Pipelining
+- Programming: You need to be able to read code
+    - Functional/Imperative/Declarative
+    - OO Patterns. Composition/Inheritance.
+- Practical Software Development
+    - Testing and test pyramids
+    - Logs, metrics and other observability
+    - Dependency management
+    - Build systems
+    - Version control
+    - Deployment, feature flags
+- Debugging
+    - Julia Evans writing

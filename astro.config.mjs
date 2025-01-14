@@ -4,24 +4,34 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://foundations-of-tech-leadership.pages.dev',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'FoTL',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/sit/fotl.dev',
 			},
 			sidebar: [
+				'getting-started',
 				{
-					label: 'Guides',
+					label: 'People',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Overview', slug: 'people/overview' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Technical',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Overview', slug: 'tech/overview' },
+					],
 				},
+				{
+					label: 'Resources',
+					collapsed: true,
+					autogenerate: { directory: 'resources' },
+				},
+				'about',
 			],
 		}),
 	],
