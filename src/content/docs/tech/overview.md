@@ -11,7 +11,7 @@ title: Technical Overview
     - Layering
     - Physical vs Logical views
 - Technology basics and tools to inspect.
-    - OS: Isolation, Containers/VMs
+    - OS: Isolation, Containers/VMs, [System Calls](./strace)
     - Networking: TCP/IP, DNS
     - Security: symmetric, asymmetric. confidentiality, integrity.
     - The web: HTTP, HTML, CSS. DOM.
